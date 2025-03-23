@@ -1,0 +1,19 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MainPage from "../../pages/main-page/ui/MainPage.tsx";
+
+const AppRouter: React.FC = () => {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<MainPage />} />
+                {/*<Route path="/redux-thunk" element={<ReduxThunkPage />} />
+                <Route path="/redux-rtk-query" element={<RTKQueryPage />} />
+                <Route path="/zustand-fetch" element={<ZustandFetchPage />} />
+                <Route path="/zustand-react-query" element={<ZustandReactQueryPage />} />*/}
+            </Routes>
+        </BrowserRouter>
+    );
+};
+
+export default AppRouter;
