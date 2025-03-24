@@ -4,6 +4,7 @@ import MainPage from "../../pages/main-page/ui/MainPage.tsx";
 import ReduxThunkPage from "../../pages/redux-thunk-page";
 import RTKQueryPage from "../../pages/redux-rtk-query-page";
 import ZustandFetchPage from "../../pages/zustand-fetch-page";
+import ZustandReactQueryPage from "../../pages/zustand-react-query-page";
 
 const AppRouter: React.FC = () => {
     return (
@@ -13,7 +14,7 @@ const AppRouter: React.FC = () => {
                 <Route path="/redux-thunk" element={<ReduxThunkPage />} />
                 <Route path="/redux-rtk-query" element={<RTKQueryPage />} />
                 <Route path="/zustand-fetch" element={<ZustandFetchPage />} />
-                {/*<Route path="/zustand-react-query" element={<ZustandReactQueryPage />} />*/}
+                <Route path="/zustand-react-query" element={<ZustandReactQueryPage />} />
             </Routes>
         </BrowserRouter>
     );
