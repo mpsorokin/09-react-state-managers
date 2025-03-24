@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { postsApi } from './postsApi'; // Import the API slice
+import { postsApi } from './postsApi';
 
 const rtkQueryStore = configureStore({
     reducer: {
